@@ -1,0 +1,523 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Sep 20, 2023, 3:06:00 AM
+    Author     : ADMIN
+*/
+
+.userlistheader{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 20px 0 20px 20px;
+}
+.userlistheader p{
+    margin-left:10px;
+    font-family: fantasy;
+    color:white;
+}
+.icon{
+    width: 60px;
+}
+body{
+    background-color: #333251;
+}
+.body{
+    margin-top: -7px;
+
+    display: flex;
+    flex-direction: row;
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.userlistsidebar{
+    width: 260px;
+    border-right: 0.05px solid white;
+    height: auto;
+
+    padding: 22px;
+}
+.btn {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    overflow: hidden;
+    height: 35px;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin-left: 30px
+}
+
+#container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+}
+
+strong {
+    z-index: 2;
+    font-family: 'Avalors Personal Use';
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px white;
+}
+
+#glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+}
+
+.circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+}
+
+.btn:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+}
+
+.btn:hover {
+    transform: scale(1.1)
+}
+
+.btn:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+}
+
+.btn:active .circle {
+    background: #FE53BB;
+}
+
+#stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+}
+
+#stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+}
+
+#stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-135rem);
+    }
+}
+
+@keyframes animStarRotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes gradient_301 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse_3011 {
+    0% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+.sidebutton{
+    padding: 20px 0 20px 40px;
+    margin-left: 10px;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #0D1117;
+    justify-content: center;
+    border-radius: 5px
+}
+
+.sidebutton {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: white;
+    display: flex;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sidebutton:not(:active):hover,
+.sidebutton:focus {
+    background-color: #403F66;
+}
+
+.sidebutton:focus,
+.sidebutton:active {
+    background-color: #1A1F24;
+    outline: none;
+}
+
+.sidebutton::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    width: 5px;
+    height: 80%;
+    background-color: #403F66;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.sidebutton:focus::before,
+.sidebutton:active::before {
+    opacity: 1;
+}
+
+.sidebutton svg {
+    width: 15px
+}
+.userlistmain{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1320px;
+    height: auto;
+    background-color: #403F66;
+
+}
+.userlistbutton{
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    color: White;
+}
+
+.userlistbutton:hover {
+
+    color: Green;
+}
+.managepost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1320px;
+    height: 700px;
+    background-color: #403F66;
+
+}
+.addvertise{
+    height: 150px;
+}
+
+.discount {
+    background-color: #333251;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.discount-item{
+    width: 182.8px;
+    margin-left: 45px;
+    height: auto;
+    flex-direction: column;
+}
+.discount-img{
+    border-radius: 10px;
+}
+.all-product{
+    background-color: #333251;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.product-item{
+    width: 260px;
+    height: 260px;
+    flex-direction: column;
+}
+.product-img{
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+}
+.product-container{
+    margin-left: 60px;
+}
+.userlist-header{
+    color: white;
+}
+.search-group {
+ display: flex;
+ line-height: 28px;
+ align-items: center;
+ position: relative;
+ margin: auto;
+ width: 750px;
+}
+
+.input {
+ width: 100%;
+ height: 40px;
+ line-height: 28px;
+ padding: 0 1rem;
+ padding-left: 2.5rem;
+ border: 2px solid transparent;
+ border-radius: 8px;
+ outline: none;
+ background-color: #f3f3f4;
+ color: #0d0c22;
+ transition: .3s ease;
+}
+
+.input::placeholder {
+ color: #9e9ea7;
+}
+
+.input:focus, input:hover {
+ outline: none;
+ border-color: rgba(234,76,137,0.4);
+ background-color: #fff;
+ box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.search-icon {
+ position: absolute;
+ left: 1rem;
+ fill: #9e9ea7;
+ width: 1rem;
+ height: 1rem;
+}
+
+.checkbox-text{
+    margin-left: 10px; 
+    color: whitesmoke;
+}
+
+.number-input {
+ color: #8707ff;
+ border: 2px solid #8707ff;
+ border-radius: 10px;
+ padding: 10px 25px;
+ background: transparent;
+ width: 100px;
+ height: 30px;
+ margin: 5px;
+ margin-bottom: 10px;
+}
+
+.number-input:active {
+ box-shadow: 2px 2px 5px #8707ff inset;
+}
+
+.input-price{
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-text{
+    color: whitesmoke;
+    text-height: 14px;
+}
+.vote-checkbox{
+    float: left;
+}
+.location-checkbox{
+    float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: whitesmoke;
+}
+h1, h2 {
+    margin: 20px;
+    font-family: fantasy;
+}
+
+.carousel-inner{
+    margin: 30px;
+    border-radius: 10px;
+    width: 1205px;
+}
+
+/* Hide the default checkbox */
+.container-box .input-box {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+ height: 0;
+ width: 0;
+}
+
+.container-box {
+ margin: 30px;
+ display: block;
+ position: relative;
+ cursor: pointer;
+ font-size: 25px;
+ user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark-box {
+    margin: 30px;
+ position: relative;
+ top: 0;
+ left: 0;
+ height: 1.3em;
+ width: 1.3em;
+ background: black;
+ border-radius: 50px;
+ transition: all 0.7s;
+ --spread: 20px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-box .input-box:checked ~ .checkmark-box {
+    margin: 30px;
+ background: black;
+ box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-box:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the checkmark when checked */
+.container-box .input-box:checked ~ .checkmark-box:after {
+ display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-box .checkmark-box:after {
+ left: 0.45em;
+ top: 0.25em;
+ width: 0.25em;
+ height: 0.5em;
+ border: solid #f0f0f0;
+ border-width: 0 0.15em 0.15em 0;
+ transform: rotate(45deg);
+}
+.user-image{
+    width: 152.8px;
+    height: 182.8px;
+    border-radius: 10px;
+}
+.user-profile{
+    border-color: #333251;
+    width: 1140.8px;
+    margin: 40px;
+    height: 182.8px;
+    border-radius: 10px; 
+}
+.user-text{
+    color: whitesmoke;
+    height: 14px;
+}
+.form-select{
+    margin: 10px;
+}

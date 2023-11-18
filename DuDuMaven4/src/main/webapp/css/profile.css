@@ -1,0 +1,161 @@
+.pageHeader_duDu
+{
+    background-color: #333251;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+
+a
+{
+  text-decoration: none;
+    color: whitesmoke;
+}
+
+ul
+{
+    list-style: none;
+    padding-left: 0;
+}
+
+.text-pink
+{
+    color: #fe2c55;
+}
+
+.text-blue
+{
+    color: rgb(32, 213, 236);
+}
+
+.btn-danger
+{
+    background-color: pink !important;
+    border-color: pink !important;
+}
+
+.btn-outline-danger
+{
+    border-color: pink !important;
+    color: pink;
+}
+
+.btn-outline-danger:hover, .btn-danger:hover
+{
+    background-color: #fe2c55 !important;
+}
+
+.search_duDu
+{
+    display: flex;
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    background-color: #dadada;
+    max-width: 50%;
+    margin: auto;
+}
+
+.search_duDu_input
+{
+    border: none;
+    border-radius: 20px;
+    background-color: #dadada;
+}
+
+.search_duDu_input:hover, .search_duDu_input:active, .search_duDu_input:focus
+{
+    border: none;
+    box-shadow: none;
+    background-color: #dadada;
+}
+
+.search_duDu_icon
+{
+    display: block;
+    padding: 10px;
+    border-left: 1px solid #adadad;
+}
+
+.suggestedAccountIcon
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.actions_duDu
+{
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 100%;
+}
+
+.duDu_screen_img
+{
+    height: 700px;
+    border-radius: 10px;
+}
+body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #403F66;    
+}
+.main-body {
+    padding: 15px;
+}
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #333251;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+.logo-container {
+    max-width: 150px; 
+    max-height: 70px; 
+    margin: 0 auto;
+}

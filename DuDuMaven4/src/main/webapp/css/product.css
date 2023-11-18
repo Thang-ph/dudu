@@ -1,0 +1,89 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21-Sep-2023, 13:21:27
+    Author     : Pham Thang
+*/
+
+.icon-hover:hover {
+  border-color: #3b71ca !important;
+  background-color: white !important;
+  color: #3b71ca !important;
+}
+
+.icon-hover:hover i {
+  color: #3b71ca !important;
+}
+
+.instagram__item {
+	height: 320px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+}
+
+.instagram__item:hover:after {
+	opacity: 1;
+}
+
+.instagram__item:hover .instagram__text {
+	opacity: 1;
+	visibility: visible;
+}
+
+.instagram__item:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	content: "";
+	opacity: 0;
+	z-index: -1;
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+
+.instagram__text {
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+
+.instagram__text i {
+	font-size: 30px;
+	color: #0d0d0d;
+}
+
+.instagram__text a {
+	font-size: 16px;
+	color: #0d0d0d;
+	font-weight: 500;
+	display: block;
+	margin-top: 10px;
+}
+.instagram__text a:hover {
+	text-decoration: none;
+}
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+

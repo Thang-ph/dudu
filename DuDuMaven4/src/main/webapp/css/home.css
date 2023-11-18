@@ -1,0 +1,414 @@
+body{
+  background-color: #403F66;
+  color: whitesmoke;
+  width: 1220px;
+}
+a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: black; /* Đặt màu văn bản mặc định (xanh) */
+}
+
+/* Liên kết khi hover (khi di chuột qua) */
+a:hover {
+  text-decoration: none; /* Loại bỏ gạch chân khi di chuột qua liên kết */
+  color: #0077b6; /* Giữ nguyên màu văn bản khi di chuột qua */
+}
+.pageHeader
+{
+  background-color: #333251;
+  border-bottom: 1px solid gray;
+  padding: 5px 0;
+    width: 100%;
+}
+
+a
+{
+  text-decoration: none;
+  color: #000;
+}
+
+ul
+{
+  list-style: none;
+  padding-left: 0;
+}
+
+.text-pink
+{
+  color: lightpink;
+}
+
+.text-blue
+{
+  color: rgb(32, 213, 236);
+}
+
+.btn-danger
+{
+  background-color: pink !important;
+  border-color: #333251 !important;
+}
+
+.btn-outline-danger
+{
+  border-color: lightpink !important;
+  color: lightpink;
+}
+.btn-default{
+  color:lightpink
+}
+
+
+.btn-outline-danger:hover, .btn-danger:hover
+{
+  background-color: rgba(245, 73, 144) !important;
+  text-decoration: none;
+}
+
+.search
+{
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 20px;
+  background-color: #403F66;
+  max-width: 50%;
+  margin: auto;
+}
+
+.search_input
+{
+  border: none;
+  border-radius: 20px;
+  background-color: #403F66;
+}
+
+.search_input:hover, .search_input:active, .search_input:focus
+{
+  border: none;
+  box-shadow: none;
+  background-color:#403F66;
+}
+
+.search_icon
+{
+  color: #967BB6;
+  display: block;
+  padding: 10px;
+  border-left: 1px solid gray ;
+}
+
+.suggestedAccountIcon
+{
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.actions
+{
+  width: 50px;
+  height: 50px;
+  background-color: #333251;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 100%;
+}
+
+.screen_img {
+  width: 320px;
+  height: 550px;
+  border-radius: 10px;
+  margin-left: 70px;
+}
+.upload{
+  color: white;
+}
+.d-flex{
+  width: 1100px;
+}
+
+
+.open-button {
+
+  width: 50px;
+  height: 50px;
+  background-color: #333251;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 100%;
+}
+
+.comment-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.comment-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #967BB6;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.videohead{
+  display: flex;
+  flex-direction: row;
+  width: 750px;
+}
+.mediabox{
+  display: flex;
+  flex-direction: row;
+}
+.reactbutton{
+  background-color: #403F66;
+  height: 100%;
+  padding: 20px;
+}
+.action{
+  margin: 10px;
+}
+.likeandshare{
+  display: flex;
+  flex-direction: row;
+}
+.likeandshare videoaction{
+  margin: 30px;
+}
+.cbox {
+  width: 190px;
+  height: 254px;
+  border-radius: 20px;
+  border: 5px;
+
+  padding: 5px;
+  border-color: white;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
+
+.videoaction{
+  margin: 5px;
+}
+/* inspired form gumroad website */
+.cbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.cbutton::after {
+  content: 'like';
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s linear;
+  top: 115%;
+}
+
+.cbutton {
+  width: 30px;
+  height: 30px;
+  transition: .2s linear;
+}
+
+.cbutton {
+  fill: white;
+  transition: .2s linear;
+}
+
+.cbutton:hover > .icon {
+  transform: scale(1.2);
+}
+
+.cbutton:hover > .icon path {
+  fill: rgb(177, 139, 189);
+}
+
+.cbutton:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: 105%;
+}
+
+.button-container {
+  display: flex;
+  background-color: rgba(245, 73, 144);
+  width: 250px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+      rgba(245, 73, 144, 0.5) 5px 10px 15px;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}
+.abtn {
+  font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+  font-size: 1rem;
+  align-items: center;
+  height: 40px;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  padding: 0 1.2rem;
+  color: #ddd;
+  border: none;
+  box-shadow: 0 .5rem 1rem rgba(143, 142, 142, 0.15)!important;
+  background: #000000;
+}
+
+.like {
+  font-size: 0.8rem;
+  color: #7f7f7f;
+  background-color: white;
+}
+
+.abtn:hover {
+  background: #2b2a2a;
+}
+
+.videohead{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  min-height: 50px;
+  max-width: 150px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #5e4dcd;
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button--submit {
+  min-height: 50px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #5e4dcd;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: #5e5dcd;
+}
+
+.input:focus, .input:focus-visible {
+  border-color: #3898EC;
+  outline: none;
+}
+/* CSS cho cửa sổ modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
