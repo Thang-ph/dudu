@@ -1,1 +1,3 @@
-# dudu
+A short video-based social network that seamlessly integrates e-commerce features. Users can create, share, and explore engaging short videos, while also browsing and shopping for products directly on the site. Creators and brands can link products to their videos, making it easy for viewers to discover and purchase items they love.
+
+With features like personalized video feeds, trending challenges, in-video product tagging, and a built-in online store, the platform brings together entertainment and shopping in a unique and interactive experience. Whether you're here to watch content, grow your audience, or sell products, our platform is designed to help you connect, express, and succeed.
